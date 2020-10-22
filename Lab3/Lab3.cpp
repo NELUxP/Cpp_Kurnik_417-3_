@@ -29,11 +29,22 @@ int main()
 
 		for (int i = 0; i < 10; i++)
 		{
-			std::cout << array_of_int0x00[5]<< std::endl;
+			std::cout << array_of_intA[3][3]<< std::endl;
 		}
 
 		int check_[2][2] = { {1,2},{3,4} };
 		std::cout << "\n¬ывод check = " << *check_ << std::endl;
+
+		int array10[10][10];
+		for (int row = 0; row < 10; row++)
+		{
+			for (int col = 0; col <=  row ; col++)//цикл прохода по колонкам и заполн€ет возрастающими
+			{
+				array10[row][col] = col + 1;
+				std::cout << array10[row][col] << "\t";
+			}
+			std::cout << std::endl;
+		}
 
 
 	//pointer - переменна€ которое содержат адрес
