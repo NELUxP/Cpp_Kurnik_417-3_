@@ -31,7 +31,8 @@ int main()
     //задание 4
     for (;;)
     {
-        double * Y = new double;
+        double Y = 3;
+        double * Y = new double[Y];
     }
 
 

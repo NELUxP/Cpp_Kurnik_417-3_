@@ -35,7 +35,7 @@ int main()
 		int check_[2][2] = { {1,2},{3,4} };
 		std::cout << "\nВывод check = " << *check_ << std::endl;
 
-		int array10[10][10];
+		int array10[3][3];
 		for (int row = 0; row < 10; row++)
 		{
 			for (int col = 0; col <=  row ; col++)//цикл прохода по колонкам и заполняет возрастающими
