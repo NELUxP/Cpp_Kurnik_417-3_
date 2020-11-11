@@ -33,6 +33,11 @@ int main()
     {
         double * Y = new double;
     }
+
+
+
+
+
     //void- пустой тип 
     std::system("pause"); // вызов функции system() из стандартной библиотеки 
     return 0;
