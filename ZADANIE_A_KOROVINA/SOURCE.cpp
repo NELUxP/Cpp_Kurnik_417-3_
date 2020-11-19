@@ -32,7 +32,7 @@ int main(void)
     setlocale(LC_ALL, "Russian");
     int m, n;
 
-    for (int i = 0; i < 14; ++i)
+    for (int i = 0; i < 16; ++i)
         std::cout << fibonacci(i) << " " << std::endl;
 
     std::cout << "\n REKURSIVNYA FUNCTYA 4NCLO = " << ZADANINE_2(12)<< std::endl;

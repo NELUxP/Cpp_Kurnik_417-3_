@@ -3,6 +3,8 @@
 #include<iomanip> // заголовочный файл для cout, « и много чего еще
 #include<bitset>
 
+/// Задания 1 - 4 
+
 class car // игровое транспортное средство
 {
 private: // всё, что ниже до следующего спецификатора, будет private
@@ -31,34 +33,33 @@ public:
 
 class PlayerComponent_inGame // игровой игрок в виртуальной среде
 {
-	int* ptr;
 public:
 	
-	
-		double max_hp = 100;
-		double max_p_speed = 1.2;
-		double current_speed = 0;
-		double id_name = 0;
 
-		double get_coordinateplayer() { 0.0; }
-		double Player_Size() { 18.0; }
-		char num_id();
-		float gravity_world(float v);
 
-		double* ptr_double = new double[max_hp];
+	double get_coordinateplayer() { 0.0; }
+	double Player_Size() { 18.0; }
+	char num_id();
+	float gravity_world(float v);
+
 
 		void print_stuff_local_memory()
 		{
-			std::cout << max_hp<< "\n" <<std::endl;
+			double max_hp = 100;
+			double max_p_speed = 1.2;
+
+			std::cout << "\nВызван метод локальной памяти = " << max_p_speed << max_hp  <<std::endl;
 		}
 
 		void print_stuff_dynamic_memory()
 		{
-			std::cout << ptr_double << "\n" << std::endl;
+			double *ptr_current_speed = new double;
+			*ptr_current_speed = 0.22;
+			double id_name = 2;
+			std::cout << "\nВызван метод динамической памяти = " << id_name << *ptr_current_speed  << std::endl;
 
 		}
 };
-
 
 class Player_In_Game
 {
@@ -79,11 +80,14 @@ public:
 };
 
 
+
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	PlayerComponent_inGame GAME;
 	GAME.print_stuff_local_memory();
 	GAME.print_stuff_dynamic_memory();
+
 
 std::system("pause");
 }

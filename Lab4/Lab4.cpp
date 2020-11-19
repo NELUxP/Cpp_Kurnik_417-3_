@@ -3,6 +3,7 @@
 #include<iomanip> // заголовочный файл для cout, « и много чего еще
 #include<bitset>
 ////стеком(stack))локальная память
+
 int main()
 {
     setlocale(LC_ALL, "Russian");
