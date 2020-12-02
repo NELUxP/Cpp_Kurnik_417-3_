@@ -3,7 +3,6 @@
 #include<iomanip> // заголовочный файл для cout, « и много чего еще
 #include<bitset>
 
-/// Задания 1 - 4 
 
 class car // игровое транспортное средство
 {
@@ -30,6 +29,7 @@ public:
 	}
 };
 
+/// Задания 1 - 4 
 
 class PlayerComponent_inGame // игровой игрок в виртуальной среде
 {
