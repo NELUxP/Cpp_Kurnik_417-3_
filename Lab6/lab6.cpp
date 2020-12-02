@@ -55,7 +55,7 @@ int main()
    std::cout << "\n*************Демонстрация работа с Файлами*************" << std::endl;
 
    FILE* ptrFile;
-   fopen_s(&ptrFile, "file.txt", "r+");
+   fopen_s(&ptrFile, "file.txt", "r");
    if (ptrFile == NULL) perror("Ошибка открытия файла");
    else
    {
