@@ -27,16 +27,16 @@ int main()
 	int array_of_int2[1][1];
 	int array_of_intA[3][3] = { {1,2,3},{4,5,6},{7,8,9} };
 
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 3; i++)
 		{
 			std::cout << array_of_intA[3][3]<< std::endl;
 		}
 
-		int check_[2][2] = { {1,2},{3,4} };
+		int check_[2][2];
 		std::cout << "\nВывод check = " << *check_ << std::endl;
 
 		int array10[3][3];
-		for (int row = 0; row < 10; row++)
+		for (int row = 0; row < 3; row++)
 		{
 			for (int col = 0; col <=  row ; col++)//цикл прохода по колонкам и заполняет возрастающими
 			{
