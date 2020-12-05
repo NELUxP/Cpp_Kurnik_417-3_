@@ -24,7 +24,7 @@ int main()
     {
         for (int c = 0; c < 3; ++c)
         {
-            std::cout << Matrix1[c][r] + 1;
+            std::cout << Matrix1[c][r];
         }
         std::cout << std::endl;
     }

@@ -3,10 +3,7 @@
 #include<iomanip> // заголовочный файл для cout, « и много чего еще
 #include<bitset>
 
-
-
 //				ЗАДАНИЕ
-
 
 				/*транспонирование матрицы c++*/
 
@@ -34,14 +31,29 @@ public:
 		{
 			for (j = 0; j < M; j++)
 				b[i][j] = a[j][i]; //Транспонирование матрицы
+			std::cout << "\n" << std::endl;
+
+		}
+
+		for (i = 0; i < N; i++)
+		{
+			for (j = 0; j < M; j++)
+				std::cout << a[i][j]<< "\t";//вывод НЕ Транспонированой Матрицы!
+			std::cout << std::endl;
+			std::cout << "\n\n"<<std::endl;
+
 		}
 
 		for (i = 0; i < N; i++)
 		{
 			for (j = 0; j < M; j++)
 				std::cout << b[i][j] << "\t";//вывод матрицы после Транспонирование
+			std::cout << "\n" << std::endl;
+
 			std::cout<< std::endl;
 		}
+
+		
 	}
 };
 
