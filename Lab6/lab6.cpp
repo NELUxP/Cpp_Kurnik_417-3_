@@ -79,7 +79,7 @@ int main()
    );
 
     //std::fstream::in - только дл€ чтени€
-    //std::fstream::ou - только дл€ записи
+    //std::fstream::out - только дл€ записи
     //std::fstream::trunc - перезапись если было содержимое
     //std::fstream::app - «апись в конце файла
    // std::fstream::binary - открыть файл ,не региру€ на \n \r на разделители
@@ -109,7 +109,7 @@ int main()
    ifs.read(buffer, 20);
    ifs.flush();
 
-   char buffer2[100] = {"0"};
+   char buffer2[100] = {0};
    ifs.seekp(100, std::fstream::beg);
    ifs.write(buffer2, 100);
    ifs.flush();

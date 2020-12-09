@@ -48,7 +48,7 @@ public:
 			double max_hp = 100;
 			double max_p_speed = 1.2;
 
-			std::cout << "\nВызван метод локальной памяти = " << max_p_speed << max_hp  <<std::endl;
+			std::cout << "\nВызван метод локальной памяти = " << max_p_speed << "\t" << max_hp  <<std::endl;
 		}
 
 		void print_stuff_dynamic_memory()
@@ -56,8 +56,8 @@ public:
 			double *ptr_current_speed = new double;
 			*ptr_current_speed = 0.22;
 			double id_name = 2;
-			std::cout << "\nВызван метод динамической памяти = " << id_name << *ptr_current_speed  << std::endl;
-
+			std::cout << "\nВызван метод динамической памяти = " << id_name <<"\t" <<*ptr_current_speed  << std::endl;
+			delete[]ptr_current_speed; 
 		}
 };
 
@@ -87,7 +87,6 @@ int main()
 	PlayerComponent_inGame GAME;
 	GAME.print_stuff_local_memory();
 	GAME.print_stuff_dynamic_memory();
-
 
 std::system("pause");
 }

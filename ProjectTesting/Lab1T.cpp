@@ -33,7 +33,7 @@ int main()
 	int b = 3;
 	std::cout << "Òåìà 1. ÎÏÅĞÀÒÎĞÛ C/C++ ÑÒĞÎÅÍÈÅ ÌÈÍÈÌÀËÜÍÎÉ ÏĞÎÃĞÀÌÌÛ C/C++" << std::endl;
 	int result = 10 % 3;
-	std::cout << "a = 10, b = 3" << std::endl; // endl ïîñòî ïåğåíîñ íà ñëåäóşùóş ñòğîêó
+	std::cout << "a = 10, b = 3" << std::endl;
 	std::cout << "10 % 3 =" << 10 % 3 << "\n"; // "\n" òîæå ñàìîå  
 	bool c = true;
 	bool d = false;
