@@ -34,7 +34,6 @@ public:
 class PlayerComponent_inGame // игровой игрок в виртуальной среде
 {
 public:
-	
 
 
 	double get_coordinateplayer() { 0.0; }
@@ -85,6 +84,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	PlayerComponent_inGame GAME;
+	Health des;
 	GAME.print_stuff_local_memory();
 	GAME.print_stuff_dynamic_memory();
 

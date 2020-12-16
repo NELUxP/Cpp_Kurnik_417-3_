@@ -10,7 +10,7 @@
 
 int main()
 {
-	
+    setlocale(LC_ALL, "Russian");
     ///2. работа с файлами на c++ 
 
 
@@ -34,7 +34,7 @@ int main()
     }
 
     ifs << "\n*************Демонстрация работа с Файлами*************" << std::endl;
-    double Kexe = 15.6;
+     double Kexe = 15.6;
     double Kexe1 = 15.4;
     ifs << "round(15.6) = " << round(Kexe) << std::endl;
     ifs << "round(15.4) = " << round(Kexe1) << std::endl;
