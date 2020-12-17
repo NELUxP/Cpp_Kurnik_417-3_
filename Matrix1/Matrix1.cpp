@@ -3,6 +3,9 @@
 #include<stdio.h>
 #include<cstdio>
 
+//				ЗАДАНИЕ
+
+                /*транспонирование матрицы c++*/
 
 class Matrix__Components
 {
@@ -69,10 +72,10 @@ int main()
 
     Matrix__Components DO_MATRIX;
     std::cout << "Записанный Результат Матрицы был\n";
-    DO_MATRIX.ShowMatrix(matrix, a, b);
+    DO_MATRIX.ShowMatrix (matrix, a, b);
     DO_MATRIX.TransMatrix(matrix, a, b);
     std::cout << "Результат транспонирование Матрицы стал\n" << std::endl;
-    DO_MATRIX.ShowMatrix(matrix, a, b);
+    DO_MATRIX.ShowMatrix (matrix, a, b);
 
     delete[] matrix; //освобождает ресурсы для динамической память
     std::system("pause");
